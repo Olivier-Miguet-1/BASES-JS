@@ -9,6 +9,7 @@ let variableComplexe1 = ["informatique", "sport", "television"]
 let variableComplexe2 = variableComplexe1
 let variableComplexe3 = [...variableComplexe1]
 
+variableComplexe2.push("course")
 
 console.log("variableComplexe1", variableComplexe1)
 console.log("variableComplexe2", variableComplexe2)
