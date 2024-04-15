@@ -15,7 +15,7 @@ for (var i = 0; i < 500; i++){
         artiste : "Elvis"+i,
         studio : "Presley rock"+i,
         language : language,
-        time : Number, data.time.Math.random() * (54596 - 1450),
+        time : Number, data.time,Math.random() * (54596 - 1450),
         dateRelease : String/Date,
         album : String,
     } 
