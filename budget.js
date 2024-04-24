@@ -7,7 +7,7 @@ var data =[
     },
     {
         type: "Loisirs",
-        descriptions: ["Sortie cinéma", "Sortie bowling"],
+        descriptions: ["Sortie cinéma", "Sortie bowling", "Sortie karting"],
         price_max: 100,
         price_min: 10
     },

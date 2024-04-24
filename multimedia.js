@@ -1,27 +1,26 @@
 var data = {
-    music: [],
-    video: [],
-    podcast : []
-}
+  music: [],
+  video: [],
+  podcast: [],
+};
 
-var min = 1450
-var max = 54596
+var min = 1450;
+var max = 54596;
 
-for (var i = 0; i < 500; i++){
-    var language = "FR"
-    if (i%2 !== 0)
-    {
-        language = "EN"
-    }
-    data.music.push({
-        titre : "Don’t be cruel"+i,
-        artiste : "Elvis"+i,
-        studio : "Presley rock"+i,
-        language : language,
-        time : Number, data.time,Math.random() * (max - min),
-        dateRelease : String/Date,
-        album : String,
-    } 
+for (var i = 0; i < 500; i++) {
+  var language = "FR";
+  if (i % 2 !== 0) {
+    language = "EN";
+  }
+  data.music.push({
+    titre: "Don’t be cruel" + i,
+    artiste: "Elvis" + i,
+    studio: "Presley rock" + i,
+    language: language,
+    time: Number[data.music.time(Math.random() * (max - min))],
+    dateRelease: String / Date,
+    album: String,
+  });
 }
 /* 
 titre : String,
