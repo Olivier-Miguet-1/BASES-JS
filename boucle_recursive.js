@@ -8,26 +8,33 @@ function recursiveLoop(tab, index) {
             console.log("Fin du tableau")
 }
 
-//recursiveLoop(table, 0)
-//for (var i = 0; i < table.length; i++) {
+recursiveLoop(table, 0)
 
 function recursiveLoopSub(tab) {
-    for (var i = 0; i < table.length; i++) {
-    console.log(tab[i].name)
-        if (tab[i].subProjet.length > 0)
-        recursiveLoopSub(tab[i].subProjet)
+    for (let i = 0; i < tab.length; i++) {
+    console.log("Nom du projet :", tab[i].name)
+    // console.log("ligne 17", tab[i].subProjet.length)
+
+        if (tab[i].subProjet){
+            recursiveLoopSub(tab[i].subProjet)
         }
+    }
 }
 
-var projet = [{ 
+var projet = [
+    { 
         name: "Projet 1",
         subProjet: [
             {
                 name: "SubProjet 1",
                 subProjet: [{name: "SubProjectdeSubPorject1"}]
+            }
+        ]
+    }, 
+    { 
+        name: "Projet 2", 
+        subProjet: []
     }
 ]
-}, 
-{ name: "Projet 2", subProjet: [] }]
 
 recursiveLoopSub(projet)
